@@ -1,6 +1,10 @@
 :root {
 }
 
+html {
+  overflow: hidden;
+}
+
 body {
   margin: 0;
   font-family: 'Bebas Neue', -apple-system, BlinkMacSystemFont,  'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans' ; 

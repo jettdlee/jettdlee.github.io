@@ -1,40 +1,24 @@
 import React from 'react';
-import { TimelineItem } from 'vertical-timeline-component-for-react';
+import { Title, SubTitle, Paragraph } from '../partials/timeline/index';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLaptopCode } from '@fortawesome/free-solid-svg-icons';
+
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 
 function AcademicTimeItem() {
   return (
-    <TimelineItem
-      key="001"
-      dateText="11/2010 – Present"
-      style={{ color: '#e86971' }}
-      bodyContainerStyle={{
-        padding: '20px',
-      }}
-    >
-      <h3>Title, Company</h3>
-      <h4>Subtitle</h4>
-      <p>
-        Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
-        exercitation. Veniam velit adipisicing anim excepteur nostrud magna
-        nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
-        reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
-        est.
+      <VerticalTimelineElement
+        className="vertical-timeline-element--education"
+        date="2002 - 2006"
+        iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+        icon={ <FontAwesomeIcon icon={faLaptopCode} /> }
+      >
+        <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
+        <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
+        <p>
+          Creative Direction, Visual Design
     </p>
-      <p>
-        Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
-        exercitation. Veniam velit adipisicing anim excepteur nostrud magna
-        nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
-        reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
-        est.
-    </p>
-      <p>
-        Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
-        exercitation. Veniam velit adipisicing anim excepteur nostrud magna
-        nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
-        reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
-        est.
-    </p>
-    </TimelineItem>
+    </VerticalTimelineElement>
   )
 }
 

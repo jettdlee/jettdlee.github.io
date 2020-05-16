@@ -1,55 +1,25 @@
 import React from 'react';
-import { TimelineItem } from 'vertical-timeline-component-for-react';
 import { Title, SubTitle, Paragraph } from '../partials/timeline/index';
+import { LaptopCodeIcon } from '../../helpers/IconHelper';
+
+import { VerticalTimelineElement }  from 'react-vertical-timeline-component';
 
 function WorkTimeItem(props) {
   return (
-    <TimelineItem
-      key={props.keyNo}
-      dateText="11/2010 – Present"
-      style={{ color: '#e86971' }}
-      dateComponent={(
-        <div
-          style={{
-            display: 'block',
-            float: 'left',
-            padding: '10px',
-            background: 'rgb(150, 150, 150)',
-            color: '#fff',
-          }}
-        >
-          11/2008 – 04/2009
-        </div>
-      )}
-      dateInnerStyle={{ background: '#61b8ff', color: '#000' }}
-      bodyContainerStyle={{
-        padding: '20px',
-      }}
+    <VerticalTimelineElement
+      className="vertical-timeline-element--work"
+      contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+      contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+      date="2011 - present"
+      iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+      icon={<LaptopCodeIcon />}
     >
-      <Title>Title, Company</Title>
-      <SubTitle>Subtitle</SubTitle>
-      <Paragraph>
-        Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
-        exercitation. Veniam velit adipisicing anim excepteur nostrud magna
-        nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
-        reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
-        est.
-      </Paragraph>
-      <Paragraph>
-        Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
-        exercitation. Veniam velit adipisicing anim excepteur nostrud magna
-        nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
-        reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
-        est.
-      </Paragraph>
-      <Paragraph>
-        Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
-        exercitation. Veniam velit adipisicing anim excepteur nostrud magna
-        nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
-        reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
-        est.
-      </Paragraph>
-    </TimelineItem>
+      <h3 className="vertical-timeline-element-title">Creative Director</h3>
+      <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+      <p>
+        Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+    </p>
+    </VerticalTimelineElement>
   )
 }
 
