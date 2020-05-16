@@ -1,5 +1,4 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function ExternalLinkIcon(props) {
   return (
@@ -9,7 +8,7 @@ function ExternalLinkIcon(props) {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <FontAwesomeIcon icon={props.icon} />
+      {props.children}
     </a>
   )
 }

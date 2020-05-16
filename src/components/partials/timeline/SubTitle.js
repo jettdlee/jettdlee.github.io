@@ -6,8 +6,10 @@ function SubTitle(props) {
     color: white;
   `
 
-  return(
-    <StyledSubTitle>{props.children}</StyledSubTitle>
+  return (
+    <StyledSubTitle className="vertical-timeline-element-subtitle">
+      {props.children}
+    </StyledSubTitle>
   )
 }
 

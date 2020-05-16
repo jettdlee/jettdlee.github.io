@@ -1,23 +1,24 @@
 import React from 'react';
 import { Title, SubTitle, Paragraph } from '../partials/timeline/index';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLaptopCode } from '@fortawesome/free-solid-svg-icons';
+import { GraduationCapIcon } from '../../helpers/IconHelper';
 
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import { VerticalTimelineElement }  from 'react-vertical-timeline-component';
 
-function AcademicTimeItem() {
+function AcademicTimeItem(props) {
+  const backgroundColour = 'rgb(33, 150, 243)';
+
   return (
-      <VerticalTimelineElement
-        className="vertical-timeline-element--education"
-        date="2002 - 2006"
-        iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-        icon={ <FontAwesomeIcon icon={faLaptopCode} /> }
-      >
-        <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
-        <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
-        <p>
-          Creative Direction, Visual Design
-    </p>
+    <VerticalTimelineElement
+      className="vertical-timeline-element--education"
+      contentStyle={{ background: backgroundColour }}
+      contentArrowStyle={{ borderRight: `7px solid  ${backgroundColour}` }}
+      date={props.dateStart + " - " + props.dateEnd}
+      iconStyle={{ background: backgroundColour }}
+      icon={<GraduationCapIcon />}
+    >
+      <Title>{props.title}</Title>
+      <SubTitle>{props.subtitle}</SubTitle>
+      <Paragraph>{props.children}</Paragraph>
     </VerticalTimelineElement>
   )
 }

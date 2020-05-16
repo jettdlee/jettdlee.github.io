@@ -6,8 +6,10 @@ function Title(props) {
     color: white;
   `
 
-  return(
-    <StyledTitle>{props.children}</StyledTitle>
+  return (
+    <StyledTitle className="vertical-timeline-element-title">
+      {props.children}
+    </StyledTitle>
   )
 }
 

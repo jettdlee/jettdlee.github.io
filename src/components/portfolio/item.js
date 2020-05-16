@@ -1,6 +1,5 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEllipsisV } from '@fortawesome/free-solid-svg-icons';
+import { EllipsisVIcon } from '../../helpers/IconHelper';
 
 function PortfolioItem(props) {
   return (
@@ -16,7 +15,7 @@ function PortfolioItem(props) {
             </div>
           </div>
           <div className="portfolio-item-icon">
-            <FontAwesomeIcon icon={faEllipsisV} className="fa-2x" />
+            <EllipsisVIcon extraClasses="fa-2x" />
           </div>
         </div>
         <img className="portfolio-item-image" src="/images/portfolio/cabin.png" alt="" />
