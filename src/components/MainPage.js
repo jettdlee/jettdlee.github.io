@@ -2,7 +2,6 @@ import React from 'react';
 import '../styles/MainPage.css';
 import Portrait from './mainpage/portrait';
 import Header from './mainpage/header';
-import SubHeader from './mainpage/subheader';
 
 class MainPage extends React.Component {
   render() {
@@ -14,7 +13,6 @@ class MainPage extends React.Component {
               <Portrait />
               <Header />
             </div>
-            <SubHeader />
           </div>
         </header>
       </section>

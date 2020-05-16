@@ -1,4 +1,5 @@
 import React from 'react';
+import SubHeader from './subheader';
 
 function Header() {
   return (
@@ -6,6 +7,7 @@ function Header() {
       <h1 className='heading'>
         Hello, I'm Jet
         </h1>
+        <SubHeader />
     </div>
   )
 }
