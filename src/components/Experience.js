@@ -17,7 +17,9 @@ class Experience extends React.Component {
         Innospec */}
 
         <Timeline lineColor={'#ddd'}>
-          <WorkTimeItem />
+          <WorkTimeItem keyNo="001"/>
+          <WorkTimeItem keyNo="002"/>
+          <WorkTimeItem keyNo="003"/>
         </Timeline>
       </section>
     )

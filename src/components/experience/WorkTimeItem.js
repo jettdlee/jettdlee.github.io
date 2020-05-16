@@ -1,15 +1,11 @@
 import React from 'react';
 import { TimelineItem } from 'vertical-timeline-component-for-react';
-import styled from 'styled-components';
+import { Title, SubTitle, Paragraph } from '../partials/timeline/index';
 
-function WorkTimeItem() {
-  const StyledParagraph = styled.p`
-    color: white;
-  `
-
+function WorkTimeItem(props) {
   return (
     <TimelineItem
-      key="001"
+      key={props.keyNo}
       dateText="11/2010 – Present"
       style={{ color: '#e86971' }}
       dateComponent={(
@@ -30,29 +26,29 @@ function WorkTimeItem() {
         padding: '20px',
       }}
     >
-      <h3>Title, Company</h3>
-      <h4>Subtitle</h4>
-      <StyledParagraph>
+      <Title>Title, Company</Title>
+      <SubTitle>Subtitle</SubTitle>
+      <Paragraph>
         Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
         exercitation. Veniam velit adipisicing anim excepteur nostrud magna
         nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
         reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
         est.
-    </StyledParagraph>
-      <p>
+      </Paragraph>
+      <Paragraph>
         Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
         exercitation. Veniam velit adipisicing anim excepteur nostrud magna
         nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
         reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
         est.
-    </p>
-      <p>
+      </Paragraph>
+      <Paragraph>
         Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
         exercitation. Veniam velit adipisicing anim excepteur nostrud magna
         nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
         reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
         est.
-    </p>
+      </Paragraph>
     </TimelineItem>
   )
 }
