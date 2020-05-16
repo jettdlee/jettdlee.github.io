@@ -1,14 +1,14 @@
 import React from 'react';
 import AboutImages from '../partials/AboutImages';
 import NamedItem from './NamedItem';
-import { faLaptopCode } from '@fortawesome/free-solid-svg-icons';
+import { LaptopCodeIcon } from '../../helpers/IconHelper';
 
 function Skills() {
   return (
     <div id="skills">
       <div>
         <div className="skill-img">
-          <NamedItem icon={faLaptopCode} text="Skills" />
+          <NamedItem text="Skills"><LaptopCodeIcon /></NamedItem>
           <AboutImages imageId="rails" srcPath="/images/skills/rails.png" alt="" />
           <AboutImages imageId="ruby" srcPath="/images/skills/ruby.png" alt="" />
           <AboutImages imageId="python" srcPath="/images/skills/python.png" alt="" />

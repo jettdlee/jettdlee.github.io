@@ -1,5 +1,4 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function NamedItem(props) {
   const {icon, text} = props;
@@ -7,7 +6,7 @@ function NamedItem(props) {
   return (
     <span id="named_item">
       <span id="named_icon">
-        <FontAwesomeIcon icon={icon} />
+        {props.children}
       </span>
       <span id="named_text">
         {text}
