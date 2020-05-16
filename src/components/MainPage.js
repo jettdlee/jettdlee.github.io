@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/MainPage.css';
+import Portrait from './mainpage/portrait';
 import Header from './mainpage/header';
 import SubHeader from './mainpage/subheader';
 
@@ -9,7 +10,10 @@ class MainPage extends React.Component {
       <section>
         <header className="App-header">
           <div className="flex-column">
-            <Header />
+            <div className="d-flex flex-row align-items-center justify-content-center">
+              <Portrait />
+              <Header />
+            </div>
             <SubHeader />
           </div>
         </header>
