@@ -1,7 +1,5 @@
 import React from 'react';
 import SectionHeader from './partials/SectionHeader';
-// import { Timeline } from 'vertical-timeline-component-for-react';
-import WorkTimeItem from './experience/WorkTimeItem';
 import Timeline from './experience/Timeline';
 
 class Experience extends React.Component {
@@ -16,15 +14,7 @@ class Experience extends React.Component {
         Geoban Santander
         Alantic Container Line
         Innospec */}
-
         <Timeline />
-
-
-        {/* <Timeline lineColor={'#ddd'}>
-          <WorkTimeItem keyNo="001"/>
-          <WorkTimeItem keyNo="002"/>
-          <WorkTimeItem keyNo="003"/>
-        </Timeline> */}
       </section>
     )
   }

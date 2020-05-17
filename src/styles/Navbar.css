@@ -15,23 +15,11 @@
   margin-left: 1rem;
 }
 
-.navbar-ul {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  margin-right: 1rem;
-}
-
 .navbar-home-link {
   padding: 0.5rem;
   min-width: 5rem;
-  font-size: 2rem;
-  color: white;
-}
-
-.navbar-home-link:hover {
-  text-decoration: none;
-  color: white; 
+  font-size: 2rem !important;
+  color: white !important;
 }
 
 .link-icon {

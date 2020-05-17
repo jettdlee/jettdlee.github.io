@@ -1,7 +1,7 @@
 import React from 'react';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 
-import Navbar from './components/Navbar';
+import NavbarBanner from './components/NavbarBanner';
 import MainPage from './components/MainPage';
 import About from './components/About';
 import Experience from './components/Experience';
@@ -16,7 +16,7 @@ const App = () => (
   <div className="App">
     <div className="">
       <HashRouter>
-        <Navbar />
+        <NavbarBanner />
         <Switch>
           <Route exact path="/" component={MainPage} />
           <Route path="/about" component={About} />

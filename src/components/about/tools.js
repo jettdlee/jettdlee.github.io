@@ -1,5 +1,5 @@
 import React from 'react';
-import AboutImages from '../partials/AboutImages';
+import AboutImages from './AboutImages';
 import NamedItem from './NamedItem';
 import { ToolsIcon } from '../../helpers/IconHelper';
 

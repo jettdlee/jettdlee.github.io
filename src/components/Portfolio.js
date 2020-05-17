@@ -1,6 +1,6 @@
 import React from 'react';
 import SectionHeader from './partials/SectionHeader';
-import PortfolioItem from './portfolio/item';
+import PortfolioProject from './portfolio/Project';
 import '../styles/Portfolio.css';
 
 class Portfolio extends React.Component {
@@ -8,11 +8,11 @@ class Portfolio extends React.Component {
     return (
       <section id="portfolio">
         <SectionHeader headerText="Portfolio" />
-        Project
+        {/* Project
         CPR Metron
-        Machine Learning Stuff
+        Machine Learning Stuff */}
         <div>
-          <PortfolioItem itemText="Project"/>
+          <PortfolioProject itemText="Project"/>
         </div>
       </section>
     )

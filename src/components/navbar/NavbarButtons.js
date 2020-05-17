@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import "../../styles/NavbarButtons.css"
+
 class NavbarButtons extends React.Component {
   render() {
     const { buttonText, buttonLink } = this.props; 

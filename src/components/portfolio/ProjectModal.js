@@ -1,16 +1,18 @@
 import React from 'react';
 import { Button, Modal } from 'react-bootstrap';
+import '../../styles/Modal.css';
 
-function PortfolioModal(props) {
+function ProjectModal(props) {
   return (
     <Modal
-      {...props}
+      dialogClassName="project-modal"
+      show={props.show}
+      onHide={props.onHide}
       size="lg"
-      aria-labelledby="contained-modal-title-vcenter"
       centered
     >
       <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
+        <Modal.Title>
           Modal heading
         </Modal.Title>
       </Modal.Header>
@@ -29,4 +31,4 @@ function PortfolioModal(props) {
   );
 }
 
-export default PortfolioModal;
+export default ProjectModal;

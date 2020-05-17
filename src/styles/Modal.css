@@ -1,0 +1,5 @@
+.project-modal div {
+  color: white;
+  font-family: var(--main-font);
+  background-color: var(--bg-colour1);
+}

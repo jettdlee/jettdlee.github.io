@@ -1,7 +1,7 @@
 import React from 'react';
 
 function NamedItem(props) {
-  const {icon, text} = props;
+  const { text } = props;
 
   return (
     <span id="named_item">

@@ -1,5 +1,5 @@
 import React from 'react';
-import AboutImages from '../partials/AboutImages';
+import AboutImages from './AboutImages';
 import NamedItem from './NamedItem';
 import { LaptopCodeIcon } from '../../helpers/IconHelper';
 

@@ -1,4 +1,9 @@
 :root {
+  --bg-colour1: #2C5364;
+  --bg-colour2: #203A43;
+  --bg-colour3: #0F2027;
+  --text-colour: white;
+  --main-font: 'Bebas Neue', -apple-system, BlinkMacSystemFont,  'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans';
 }
 
 html {
@@ -7,13 +12,13 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Bebas Neue', -apple-system, BlinkMacSystemFont,  'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans' ; 
+  font-family: var(--main-font);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #fff;
-  background: #0F2027;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: var(--text-colour);
+  background: var(--bg-colour1);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, var(--bg-colour1), var(--bg-colour2), var(--bg-colour3));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, var(--bg-colour1), var(--bg-colour2), var(--bg-colour3)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   font-size: 1rem;
 }
 
@@ -27,11 +32,11 @@ code {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #203A43; 
+  background: var(--bg-colour2); 
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #2C5364; 
+  background: var(--bg-colour1); 
 }
