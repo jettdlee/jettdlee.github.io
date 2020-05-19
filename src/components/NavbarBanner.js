@@ -1,9 +1,9 @@
 import React from 'react';
 import ExternalLinks from './navbar/ExternalLinks';
 import NavbarButtons from './navbar/NavbarButtons';
+import HomeLink from './navbar/HomeLink';
 
 import { Navbar, Nav } from 'react-bootstrap';
-import { LinkedInIcon, TwitterIcon } from '../helpers/IconHelper';
 import '../styles/Navbar.css';
 
 class NavbarBanner extends React.Component {
@@ -11,12 +11,10 @@ class NavbarBanner extends React.Component {
     return (
       <Navbar className="navbar" id="main_navbar">
         <Nav className="navbar-main-links">
-          <Navbar.Brand className="navbar-home-link" href="/">
-            Jet-Tsyn Lee
-          </Navbar.Brand>
+          <HomeLink />
           <ExternalLinks />
         </Nav>
-        <Nav className="justify-content-end">
+        <Nav className="content-links">
           <NavbarButtons buttonText="About" buttonLink="/about" />
           <NavbarButtons buttonText="Experience" buttonLink="/experience" />
           <NavbarButtons buttonText="Portfolio" buttonLink="/portfolio" />

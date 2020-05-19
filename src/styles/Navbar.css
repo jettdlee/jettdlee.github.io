@@ -7,6 +7,7 @@
   flex-wrap: wrap;
   align-items: center;
   font-size: 1rem;
+  justify-content: space-between;
 }
 
 .navbar-main-links {
@@ -15,11 +16,8 @@
   margin-left: 1rem;
 }
 
-.navbar-home-link {
-  padding: 0.5rem;
-  min-width: 5rem;
-  font-size: 2rem !important;
-  color: white !important;
+.content-links {
+  margin-right: 1rem;
 }
 
 .link-icon {
