@@ -11,8 +11,16 @@ class Portfolio extends React.Component {
         {/* Project
         CPR Metron
         Machine Learning Stuff */}
-        <div>
-          <PortfolioProject itemText="Project"/>
+        <div className="projects">
+          <PortfolioProject itemText="Touching to See"/>
+          <PortfolioProject itemText="Touching to See"/>
+          <PortfolioProject itemText="Touching to See"/>
+          <PortfolioProject itemText="Touching to See"/>
+          <PortfolioProject itemText="Touching to See"/>
+          <PortfolioProject itemText="Touching to See"/>
+          <PortfolioProject itemText="Touching to See"/>
+          <PortfolioProject itemText="Touching to See"/>
+          <PortfolioProject itemText="CPR Metron"/>
         </div>
       </section>
     )

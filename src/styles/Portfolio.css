@@ -1,3 +1,9 @@
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .portfolio-item {
   cursor: pointer;
   position: relative;
@@ -5,6 +11,7 @@
   max-width: 20rem;
   border-radius: 0.5rem;
   overflow: hidden;
+  margin: 2rem;
 }
 
 .portfolio-item-image {
