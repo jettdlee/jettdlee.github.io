@@ -8,6 +8,10 @@ function HomeLink() {
     min-width: 5rem;
     font-size: 2rem !important;
     color: white !important;
+
+    &:hover {
+      text-decoration: none;
+    }
   `
 
   return (
