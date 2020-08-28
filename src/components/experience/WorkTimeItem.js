@@ -1,5 +1,6 @@
 import React from 'react';
-import { Title, SubTitle, Paragraph } from '../partials/timeline/index';
+import { Title, SubTitle } from '../partials/timeline/index';
+import { Paragraph } from '../partials/Paragraph';
 import { LaptopCodeIcon } from '../../helpers/IconHelper';
 
 import { VerticalTimelineElement }  from 'react-vertical-timeline-component';
@@ -14,7 +15,7 @@ function WorkTimeItem(props) {
       contentArrowStyle={{ borderRight: `7px solid  ${backgroundColour}` }}
       date={props.dateStart + " - " + props.dateEnd}
       iconStyle={{ background: backgroundColour }}
-      icon={<LaptopCodeIcon />}
+      icon={<LaptopCodeIcon extraClasses="fa-lg"/>}
     >
       <Title>{props.title}</Title>
       <SubTitle>{props.subtitle}</SubTitle>
