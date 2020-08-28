@@ -9,7 +9,7 @@ function Portrait() {
   `;
 
   return(
-    <StyledImage className="avatar-logo" src="/images/Portrait.png" roundedCircle />
+    <StyledImage className="avatar-logo" src="/images/Portrait2.png" roundedCircle />
   )
 }
 
