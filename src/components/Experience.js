@@ -7,13 +7,6 @@ class Experience extends React.Component {
     return (
       <section id="experience">
         <SectionHeader headerText="Experience" />
-        {/* University of Liverpool
-        Liverpool John Moores
-
-        Yozu
-        Geoban Santander
-        Alantic Container Line
-        Innospec */}
         <Timeline />
       </section>
     )

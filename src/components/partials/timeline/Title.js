@@ -8,7 +8,7 @@ function Title(props) {
 
   return (
     <StyledTitle className="vertical-timeline-element-title">
-      {props.children}
+      <a href="">{props.children}</a>
     </StyledTitle>
   )
 }

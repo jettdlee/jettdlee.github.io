@@ -16,7 +16,7 @@ function HomeLink() {
 
   return (
     <HomeNavLink className="navbar-home-link" to="/">
-      Jet-Tsyn Lee
+      Jet Lee
     </HomeNavLink>
   )
 }
