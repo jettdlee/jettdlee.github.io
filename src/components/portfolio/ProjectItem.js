@@ -8,7 +8,7 @@ function ProjectItem(props) {
       <div className="portfolio-item-caption" onClick={props.onClick}>
         <div className="portfolio-item-caption-content">
           <div className="portfolio-item-text">
-            {props.itemText}
+            {props.itemTitle}
           </div>
           <div className="portfolio-item-summary">
             {props.children}
@@ -18,7 +18,7 @@ function ProjectItem(props) {
           <EllipsisVIcon extraClasses="fa-2x" />
         </div>
       </div>
-      <Image className="portfolio-item-image" src={props.imageSrc} alt="" />
+      <Image className="portfolio-item-image" src={props.imageSource} alt="" />
     </div>
   );
 }

@@ -13,15 +13,12 @@ function ProjectModal(props) {
     >
       <Modal.Header closeButton>
         <Modal.Title>
-          Modal heading
+          {props.itemTitle}
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <h4>Centered Modal</h4>
         <p>
-          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-          consectetur ac, vestibulum at eros.
+          {props.children}
         </p>
       </Modal.Body>
       <Modal.Footer>

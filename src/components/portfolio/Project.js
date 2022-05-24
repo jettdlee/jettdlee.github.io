@@ -10,8 +10,12 @@ function PortfolioProject(props) {
 
   return (
     <>
-    <ProjectItem itemText="Project" imageSrc="/images/portfolio/cabin.png" onClick={handleShow} />
-    <ProjectModal show={modalShow} onHide={handleClose} />
+    <ProjectItem itemTitle={props.itemTitle} imageSource={props.imageSource} onClick={handleShow} >
+      {props.children}
+    </ProjectItem>
+    <ProjectModal itemTitle={props.itemTitle} show={modalShow} onHide={handleClose} >
+      {props.children}
+    </ProjectModal>
     </>
   )
 }
