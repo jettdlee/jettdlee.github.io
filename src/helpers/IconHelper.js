@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { faLaptopCode, faEllipsisV, faGraduationCap, faTools, faCoins, faRobot } from '@fortawesome/free-solid-svg-icons';
 import { faGem } from '@fortawesome/free-regular-svg-icons';
-import { faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 export function LaptopCodeIcon(props) {
   return (
@@ -28,6 +28,12 @@ export function TwitterIcon(props) {
     <FontAwesomeIcon icon={faTwitter} className={props.extraClasses} />
   )
 };
+
+export function GithubIcon(props) {
+  return (
+    <FontAwesomeIcon icon={faGithub} className={props.extraClasses} />
+  )
+}
 
 export function GraduationCapIcon(props) {
   return (
