@@ -22,6 +22,7 @@ function ProjectModal(props) {
         </p>
       </Modal.Body>
       <Modal.Footer>
+        <Button href={props.projectLink}>Link</Button>
         <Button onClick={props.onHide}>Close</Button>
       </Modal.Footer>
     </Modal>

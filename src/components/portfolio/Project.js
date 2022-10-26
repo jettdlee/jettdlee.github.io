@@ -13,7 +13,7 @@ function PortfolioProject(props) {
     <ProjectItem itemTitle={props.itemTitle} imageSource={props.imageSource} onClick={handleShow} >
       {props.children}
     </ProjectItem>
-    <ProjectModal itemTitle={props.itemTitle} show={modalShow} onHide={handleClose} >
+    <ProjectModal itemTitle={props.itemTitle} show={modalShow} onHide={handleClose} projectLink={props.projectLink} >
       {props.children}
     </ProjectModal>
     </>
